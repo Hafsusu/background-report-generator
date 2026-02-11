@@ -6,7 +6,7 @@ This system allows users to:
 
 Create business orders with multiple items
 
-Generate a downloadable CSV report of completed orders
+Generate a downloadable CSV or PDF report of completed orders
 
 Process report generation asynchronously using Celery
 
