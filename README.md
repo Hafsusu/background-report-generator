@@ -30,6 +30,9 @@ Broker: Redis
 
 Storage: Local filesystem (reports directory respective csv and pdf directories for file types)
 
+![Architecture Diagram](backend/docs/images/architecture_diagram.png)
+
+
 # System Flow
 
 High-Level Flow
@@ -51,6 +54,11 @@ Worker → Update ReportJob status
 React → Poll report status
 
 React → Download file when status = COMPLETED
+
+![High Level Flow Diagram](backend/docs/images/system_flow_diagram_1.drawio.png)
+
+![System Diagram](backend/docs/images/system_flow_diagram.drawio.png)
+
 
 # Background Task Configuration
 
