@@ -132,7 +132,7 @@ Synchronous Approach (Bad for this case)
 
 If report generation was synchronous:
 
-API request would block until CSV completes
+API request would block until CSV or PDF completes
 
 Slow user experience
 
