@@ -126,6 +126,24 @@ celery -A config worker --loglevel=info
 ```
 Redis must be running before starting the worker.
 
+# Async vs Sync Processing – Trade-offs
+
+Synchronous Approach (Bad for this case)
+
+If report generation was synchronous:
+
+API request would block until CSV completes
+
+Slow user experience
+
+Risk of request timeout
+
+High memory usage under load
+
+Poor scalability
+
+Example problem: If report takes 10 seconds, user waits 10 seconds.
+
 # Asynchronous Approach (Used Here)
 
 With Celery:
